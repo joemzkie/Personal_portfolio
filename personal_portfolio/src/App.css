@@ -1,0 +1,159 @@
+/* Base Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Color Variables (Dark Theme) */
+:root {
+  --bg-dark: #121212;
+  --bg-panel: #1E1E1E;
+  --text-light: #E0E0E0;
+  --accent: #00E5FF;
+}
+
+body {
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+}
+
+.layout-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* SECTION 1: Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: var(--bg-panel);
+  border-bottom: 2px solid var(--bg-dark);
+}
+
+.nav-brand {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.nav-links button {
+  background: none;
+  border: none;
+  color: var(--text-light);
+  margin-left: 2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  padding-bottom: 0.2rem;
+}
+
+.nav-links button:hover {
+  color: var(--accent);
+}
+
+.nav-links button.active {
+  color: var(--accent);
+  border-bottom: 2px solid var(--accent);
+}
+
+/* Wrapper for Sidebar and Content */
+.main-wrapper {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+/* SECTION 2: Sidebar */
+.sidebar {
+  width: 250px;
+  background-color: var(--bg-panel);
+  padding: 2rem;
+  border-right: 2px solid var(--bg-dark);
+}
+
+.sidebar h2 {
+  margin-bottom: 1.5rem;
+  color: var(--accent);
+}
+
+.sidebar-info p {
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.skills-highlight {
+  margin-top: 2rem;
+  font-weight: bold;
+  color: #888;
+}
+
+/* SECTION 3: Main Content */
+.content-area {
+  flex: 1;
+  padding: 3rem;
+  overflow-y: auto;
+}
+
+.content-area h1 {
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #333;
+  padding-bottom: 0.5rem;
+}
+
+/* Project Cards */
+.project-card {
+  background-color: var(--bg-panel);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 4px;
+  border-left: 4px solid var(--accent);
+}
+
+.project-card h3 {
+  margin-bottom: 0.5rem;
+}
+
+.project-card a, .content-area a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+.project-card a:hover, .content-area a:hover {
+  text-decoration: underline;
+}
+
+.download-btn {
+  background-color: var(--accent);
+  color: #000 !important;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+/* Simple animation for changing tabs */
+.fade-in {
+  animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* PDF Viewer Styles */
+.pdf-container {
+  width: 100%;
+  height: 600px; /* Adjust this height if you want the viewer taller or shorter */
+  margin: 2rem 0;
+  border: 2px solid #333;
+  border-radius: 4px;
+  overflow: hidden;
+  background-color: #222; /* Fallback background while loading */
+}
