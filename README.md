@@ -16,7 +16,7 @@
 <!-- ================================================================= -->
 <p align="center">
   <a href="https://joemzkie.github.io/Personal_portfolio/">
-    <img src="https://via.placeholder.com/900x450/111111/ffffff?text=Drop+Your+Portfolio+Screenshot+Here" alt="Personal Portfolio Banner" width="90%">
+    <img src="Screenshot 2026-07-08 113603.png" alt="Personal Portfolio Banner" width="90%">
   </a>
 </p>
 
