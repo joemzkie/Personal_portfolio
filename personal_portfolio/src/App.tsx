@@ -52,6 +52,16 @@ function App() {
             <section className="fade-in">
               <h1>My Projects</h1>
               <div className="project-card">
+                <h3>Orbit Topic Platform</h3>
+                <p>Full stacked web platform with react.js, python, sqlalchemy, redis, postgresql.</p>
+                <a href="https://github.com/joemzkie/Orbit" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+              </div>
+              <div className="project-card">
+                <h3>To do app with AI chatbot assistant</h3>
+                <p>Todo app with api calls from gemini AI serves as chatbot.</p>
+                <a href="https://github.com/joemzkie/Todo_app_with_AI" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+              </div>
+              <div className="project-card">
                 <h3>Low-Latency Stock Tracker</h3>
                 <p>Hybrid system built with Python and C++ (pybind11).</p>
                 <a href="https://github.com/joemzkie/finance_project" target="_blank" rel="noopener noreferrer">View on GitHub</a>
@@ -67,6 +77,11 @@ function App() {
                 <a href="https://github.com/joemzkie/Shelf-control" target="_blank" rel="noopener noreferrer">View on GitHub</a>
               </div>
               <div className="project-card">
+                <h3>Contributed routing engine on Alitaptap</h3>
+                <p>A web application that providees platform to commuters with community a based route contributions.</p>
+                <a href="https://github.com/codex-zerocodeX/alitaptap-v2.git" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+              </div>
+              <div className="project-card">
                 <h3>Clinical Dysmorphology Classifier</h3>
                 <p>A clinical decision support prototype utilizing computer vision to detect phenotypic markers.</p>
                 <a href="https://github.com/joemzkie/Down-tensorflow" target="_blank" rel="noopener noreferrer">View on GitHub</a>
@@ -80,14 +95,14 @@ function App() {
               <p>I am a goal-oriented Computer Science student nearing graduation, specializing in backend architecture, quantitative development, and machine learning. Driven by a preference for rigorous, high-performance logic over frontend frameworks, my technical core is built on C++, Python, SQL, and Java. Whether I am leading a development team to engineer an NLP-driven feature fusion system or bridging Python and C++ to build low-latency financial engines, my focus is on delivering scalable, uncompromising solutions. I thrive on practical execution, taking complex architectural challenges and turning them into efficient, data-grounded systems.</p>
               
             {/* PDF Viewer Addition */}
+             {/* PDF Viewer Addition */}
               <div className="pdf-container">
-                {/* Notice the lowercase 'v' in vFinal below */}
-                <object data="/Jose_Emmanuel_Dioso_CV_vFinal.pdf" type="application/pdf" width="100%" height="100%">
-                  <p>It appears your browser doesn't support embedded PDFs. <a href="/Jose_Emmanuel_Dioso_CV_vFinal.pdf">Click here to download it</a>.</p>
+                <object data="./Jose_Emmanuel_Dioso_CV_vFinal.pdf" type="application/pdf" width="100%" height="100%">
+                  <p>It appears your browser doesn't support embedded PDFs. <a href="./Jose_Emmanuel_Dioso_CV_vFinal.pdf">Click here to download it</a>.</p>
                 </object>
               </div>
 
-              <a href="/Jose_Emmanuel_Dioso_CV_vFinal.pdf" download className="download-btn">Download Resume</a>
+              <a href="./Jose_Emmanuel_Dioso_CV_vFinal.pdf" download className="download-btn">Download Resume</a>
             </section>
           )}
 
